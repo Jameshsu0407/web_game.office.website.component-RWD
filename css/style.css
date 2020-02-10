@@ -1,0 +1,16 @@
+.box-30{
+    /* 向上內距 */
+    padding-top: 30px;
+    /* 向下內距 */
+    padding-bottom: 30px;
+}
+.mt-60{
+    /* 向上外距 */
+	margin-top: 60px;
+}
+.footer-content{
+    /* 高度 */
+    height: 60px;
+    /* 行高 */
+    line-height: 60px;
+}
