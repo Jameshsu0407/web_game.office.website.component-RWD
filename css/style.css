@@ -29,6 +29,15 @@
     background-attachment: fixed;
 }
 
-.feedback{
-    display: inline-block;
+
+/* 載具大於576以上隱藏內容 */
+@media (min-width: 576px) {
+    .card-text-content{
+    display:-webkit-box;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    /* 想顯示的行數 lines you want to display */
+    -webkit-line-clamp: 2;      
+    -webkit-box-orient: vertical;
+    }
 }
