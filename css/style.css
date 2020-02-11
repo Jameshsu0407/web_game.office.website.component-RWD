@@ -28,3 +28,7 @@
     /* 背景圖片固定 */
     background-attachment: fixed;
 }
+
+.feedback{
+    display: inline-block;
+}
