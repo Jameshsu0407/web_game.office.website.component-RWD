@@ -19,8 +19,12 @@
     padding: 50px 0;
     /* 兩點回到上層資料夾 */
     background-image: url('../images/Banner.jpg');
+    /* 圖片位置 */
     background-position: center top;
+    /* 背景圖片尺寸 */
     background-size: cover;
+    /* 圖片不重覆 */
     background-repeat: no-repeat;
+    /* 背景圖片固定 */
     background-attachment: fixed;
 }
