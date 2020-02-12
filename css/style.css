@@ -22,7 +22,7 @@
     /* 圖片位置 */
     background-position: center top;
     /* 背景圖片尺寸 */
-    background-size: cover;
+    background-size: contain;
     /* 圖片不重覆 */
     background-repeat: no-repeat;
     /* 背景圖片固定 */
