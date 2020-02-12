@@ -116,8 +116,11 @@
 					<!-- .card取代bootstrap3.3.7的Thumbnails,Wells,Panel -->
 					<!-- bg-light背景顏色改為高亮 -->
 					<div class="card bg-light p-2">
-						<!-- card-img-top圖片放在卡片頂部 -->
-						<img src="images/Scene1.jpg" alt="第一關：石器時代" class="card-img-top">
+
+						<a href="#" data-toggle="popover" data-trigger="hover" title="石器時代" data-content="孫悟空學習技能：金窟棒回力鏢" data-placement="top">
+							<!-- card-img-top圖片放在卡片頂部 -->
+							<img src="images/Scene1.jpg" alt="第一關：石器時代" class="card-img-top">
+						</a>
 						<!-- card-header卡片頭 會有灰底跟底線 -->
 						<h5 class="card-header text-danger text-center">石器時代</h5>
 						<div class="card-body">
@@ -131,7 +134,9 @@
 				<!-- 第二關 -->
 				<div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 mb-4">
 					<div class="card bg-light p-2">
-						<img src="images/Scene2.jpg" alt="第二關：海盜船" class="card-img-top">
+						<a href="#" data-toggle="popover" data-trigger="hover" title="海盜船" data-content="孫悟空學習技能：金窟棒連續刺擊" data-placement="top">
+							<img src="images/Scene2.jpg" alt="第二關：海盜船" class="card-img-top">
+						</a>
 						<h5 class="card-header text-danger text-center">海盜船</h5>
 						<div class="card-body">
 							<h6 class="card-title text-danger">第二關：</h6>
@@ -144,7 +149,9 @@
 				<!-- 第三關 -->
 				<div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 mb-4">
 					<div class="card bg-light p-1">
-						<img src="images/Scene3.jpg" alt="第三關：埃及金字塔" class="card-img-top">
+						<a href="#" data-toggle="popover" data-trigger="hover" title="埃及金字塔" data-content="孫悟空學習技能：分身術" data-placement="top">
+							<img src="images/Scene3.jpg" alt="第三關：埃及金字塔" class="card-img-top">
+						</a>
 						<h5 class="card-header text-danger text-center">埃及金字塔</h5>
 						<div class="card-body">
 							<h6 class="card-title text-danger">第三關：</h6>
@@ -157,7 +164,10 @@
 				<!-- 第四關 -->
 				<div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 mb-4">
 					<div class="card bg-light p-1">
-						<img src="images/Scene4.jpg" alt="第四關：羅馬競技場" class="card-img-top">
+						<a href="#" data-toggle="popover" data-trigger="hover" title="羅馬競技場" data-content="孫悟空學習技能：瞬間移動" data-placement="top">
+							<img src="images/Scene4.jpg" alt="第四關：羅馬競技場" class="card-img-top">
+						</a>
+						
 						<h5 class="card-header text-danger text-center">羅馬競技場</h5>
 						<div class="card-body">
 							<h6 class="card-title text-danger">第四關：</h6>
@@ -351,19 +361,19 @@
 				<div class="col-12 col-sm-12 col-md-5 col-lg-5">
 					<div class="row align-items-center">
 						<div class="col-6 col-sm-6 col-md-12 col-lg-12 pl-4">
-						<address>
-							<strong>公司</strong>：123learngo, Inc.<br />
-							<strong>地址</strong>：100台北市XXXXXXXXXX<br />
-							<!-- 在abbr標籤裡加入title屬性 當滑鼠停在縮寫上面則會顯示title屬性 -->
-							<strong><abbr title="聯絡電話">TEL</abbr></strong>：(123) 456-7890<br />
-							<strong><abbr title="電子信箱">E-Mail</abbr></strong>：<a
-								href="mailto:123learngo@gmail.com">123learngo@gmail.com</a>
-						</address>
-					</div>
+							<address>
+								<strong>公司</strong>：123learngo, Inc.<br />
+								<strong>地址</strong>：100台北市XXXXXXXXXX<br />
+								<!-- 在abbr標籤裡加入title屬性 當滑鼠停在縮寫上面則會顯示title屬性 -->
+								<strong><abbr title="聯絡電話">TEL</abbr></strong>：(123) 456-7890<br />
+								<strong><abbr title="電子信箱">E-Mail</abbr></strong>：<a
+									href="mailto:123learngo@gmail.com">123learngo@gmail.com</a>
+							</address>
+						</div>
 
-					<div class="col-6 col-sm-6 col-md-12 col-lg-12">
-						<img src="./images/QRcode.png" alt="QRcode" class="img-fluid w-100">
-					</div>
+						<div class="col-6 col-sm-6 col-md-12 col-lg-12">
+							<img src="./images/QRcode.png" alt="QRcode" class="img-fluid w-100">
+						</div>
 					</div>
 
 				</div>
@@ -380,6 +390,11 @@
 		<p class="text-center text-white mb-0">© 2017 123learngo</p>
 	</footer>
 	<!--頁腳/結束-->
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="popover"]').popover();
+		})
+	</script>
 </body>
 
 </html>
