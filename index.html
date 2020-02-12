@@ -116,7 +116,9 @@
 					<!-- .card取代bootstrap3.3.7的Thumbnails,Wells,Panel -->
 					<!-- bg-light背景顏色改為高亮 -->
 					<div class="card bg-light p-2">
-
+						<!-- popover彈出提示框 -->
+						<!-- data-toggle="popover"宣告要使用popover效果 data-trigger="hover"滑入觸發，若不寫預設為點擊觸發 有click,hover,focus,manual -->
+						<!-- title="＃"彈出訊息標題 data-content="＃"彈出訊息內容 data-placement="auto,top,bottom,left,right"彈出方向 -->
 						<a href="#" data-toggle="popover" data-trigger="hover" title="石器時代"
 							data-content="孫悟空學習技能：金窟棒回力鏢" data-placement="top">
 							<!-- card-img-top圖片放在卡片頂部 -->
@@ -355,14 +357,18 @@
 									</label>
 								</div>
 								<!-- btn-block按鈕延展到父框架 -->
+								<!-- collapse折疊使用button,a作為觸發器 -->
+								<!-- data-toggle="collapse"宣告使用collaose效果 data-target="#cancel"自定義觸發器 -->
 								<button type="button" class="btn btn-defualt btn-lg btn-block" data-toggle="collapse"
 									data-target="#cancel">取消</button>
 								<!-- 取消內容/開始 -->
+								<!-- collapse使區塊預設為隱藏物件，當展開時js會在collapse類別後面多加show類別 -->
 								<div class="mb-3 collapse" id="cancel">
-									<div class="card card-body bg-danger text-white">獎品有限，若您尚未填寫請加快腳步填寫後送出。
-									</div>
+									<div class="card card-body bg-danger text-white">獎品有限，若您尚未填寫請加快腳步填寫後送出。</div>
 								</div>
 								<!-- 取消內容/結束 -->
+								<!-- modal互動式窗 效果是在被觸發後 網頁有黑色半透明遮罩 於遮罩上呈現內容 -->
+								<!-- data-toggle="modal"宣告使用modal效果 data-target="#myModal"自定義觸發器 -->
 								<button type="submit" class="btn btn-primary btn-lg btn-block mt-3" data-toggle="modal"
 									data-target="#myModal">送出</button>
 							</div>
@@ -371,13 +377,17 @@
 				</div>
 				<!-- 改善建議/結束 -->
 				<!-- Modal/開始 -->
+				<!-- modal使用基礎樣式 fade淡出淡入效果 tabindex="-1"不懂 -->
 				<div class="modal fade" id="myModal" tabindex="-1">
+					<!-- modal-dialog使modal視窗有基礎樣式寬度 -->
 					<div class="modal-dialog modal-lg">
 						<!-- Modal content -->
 						<div class="modal-content">
 							<div class="modal-header">
 								<h4 class="modal-title">聯繫資料填寫</h4>
+								<!-- close按鈕顯示叉叉 data-dismiss="modal"點擊按鈕會關閉互動式窗 aria-label="close"使螢幕閱讀器可讀出該內容為close -->
 								<button type="button" class="close" data-dismiss="modal" aria-label="close">
+									<!-- aria-hidden="true"可讓螢幕閱讀器讀不到內容 -->
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
@@ -390,7 +400,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- Modal/開始 -->
+				<!-- Modal/結束-->
 				<!-- 聯絡資訊/開始 -->
 				<div class="col-12 col-sm-12 col-md-5 col-lg-5">
 					<div class="row align-items-center">
@@ -424,6 +434,8 @@
 		<p class="text-center text-white mb-0">© 2017 123learngo</p>
 	</footer>
 	<!--頁腳/結束-->
+
+	<!-- 當HTML中有data-toggle="popover"屬性時會觸發popover效果 -->
 	<script>
 		$(document).ready(function () {
 			$('[data-toggle="popover"]').popover();
