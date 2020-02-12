@@ -117,7 +117,8 @@
 					<!-- bg-light背景顏色改為高亮 -->
 					<div class="card bg-light p-2">
 
-						<a href="#" data-toggle="popover" data-trigger="hover" title="石器時代" data-content="孫悟空學習技能：金窟棒回力鏢" data-placement="top">
+						<a href="#" data-toggle="popover" data-trigger="hover" title="石器時代"
+							data-content="孫悟空學習技能：金窟棒回力鏢" data-placement="top">
 							<!-- card-img-top圖片放在卡片頂部 -->
 							<img src="images/Scene1.jpg" alt="第一關：石器時代" class="card-img-top">
 						</a>
@@ -134,7 +135,8 @@
 				<!-- 第二關 -->
 				<div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 mb-4">
 					<div class="card bg-light p-2">
-						<a href="#" data-toggle="popover" data-trigger="hover" title="海盜船" data-content="孫悟空學習技能：金窟棒連續刺擊" data-placement="top">
+						<a href="#" data-toggle="popover" data-trigger="hover" title="海盜船"
+							data-content="孫悟空學習技能：金窟棒連續刺擊" data-placement="top">
 							<img src="images/Scene2.jpg" alt="第二關：海盜船" class="card-img-top">
 						</a>
 						<h5 class="card-header text-danger text-center">海盜船</h5>
@@ -149,7 +151,8 @@
 				<!-- 第三關 -->
 				<div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 mb-4">
 					<div class="card bg-light p-1">
-						<a href="#" data-toggle="popover" data-trigger="hover" title="埃及金字塔" data-content="孫悟空學習技能：分身術" data-placement="top">
+						<a href="#" data-toggle="popover" data-trigger="hover" title="埃及金字塔" data-content="孫悟空學習技能：分身術"
+							data-placement="top">
 							<img src="images/Scene3.jpg" alt="第三關：埃及金字塔" class="card-img-top">
 						</a>
 						<h5 class="card-header text-danger text-center">埃及金字塔</h5>
@@ -164,10 +167,11 @@
 				<!-- 第四關 -->
 				<div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3 mb-4">
 					<div class="card bg-light p-1">
-						<a href="#" data-toggle="popover" data-trigger="hover" title="羅馬競技場" data-content="孫悟空學習技能：瞬間移動" data-placement="top">
+						<a href="#" data-toggle="popover" data-trigger="hover" title="羅馬競技場" data-content="孫悟空學習技能：瞬間移動"
+							data-placement="top">
 							<img src="images/Scene4.jpg" alt="第四關：羅馬競技場" class="card-img-top">
 						</a>
-						
+
 						<h5 class="card-header text-danger text-center">羅馬競技場</h5>
 						<div class="card-body">
 							<h6 class="card-title text-danger">第四關：</h6>
@@ -350,13 +354,43 @@
 											class="form-check-input">其他
 									</label>
 								</div>
-								<button type="submit" class="btn btn-primary btn-lg btn-block mt-3">送出</button>
+								<!-- btn-block按鈕延展到父框架 -->
+								<button type="button" class="btn btn-defualt btn-lg btn-block" data-toggle="collapse"
+									data-target="#cancel">取消</button>
+								<!-- 取消內容/開始 -->
+								<div class="mb-3 collapse" id="cancel">
+									<div class="card card-body bg-danger text-white">獎品有限，若您尚未填寫請加快腳步填寫後送出。
+									</div>
+								</div>
+								<!-- 取消內容/結束 -->
+								<button type="submit" class="btn btn-primary btn-lg btn-block mt-3" data-toggle="modal"
+									data-target="#myModal">送出</button>
 							</div>
 						</div>
 					</form>
 				</div>
 				<!-- 改善建議/結束 -->
-
+				<!-- Modal/開始 -->
+				<div class="modal fade" id="myModal" tabindex="-1">
+					<div class="modal-dialog modal-lg">
+						<!-- Modal content -->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">聯繫資料填寫</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-label="close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>感謝您的填寫，聯繫資料已送出，請注意兌獎日期</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Modal/開始 -->
 				<!-- 聯絡資訊/開始 -->
 				<div class="col-12 col-sm-12 col-md-5 col-lg-5">
 					<div class="row align-items-center">
@@ -391,7 +425,7 @@
 	</footer>
 	<!--頁腳/結束-->
 	<script>
-		$(document).ready(function(){
+		$(document).ready(function () {
 			$('[data-toggle="popover"]').popover();
 		})
 	</script>
