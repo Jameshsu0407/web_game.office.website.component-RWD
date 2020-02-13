@@ -18,6 +18,8 @@
 		crossorigin="anonymous"></script>
 	<!-- 有bundle版的多了Dropdown,Popper,Tooltips內容 -->
 	<script src="./js/bootstrap.bundle.min.js"></script>
+	<!-- 網頁標籤圖示 -->
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -53,10 +55,10 @@
 				<div class="col-12 col-sm-12 col-md-6 col-lg-6">
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-							<h2 class="text-warning">
+							<h2 class="text-warning pt-4">
 								<strong>遊戲世界觀</strong>
 							</h2>
-							<p class="text-white">
+							<p class="text-white pt-2 pb-2">
 								據古書記載，齊天大聖在大鬧天宮之前，有另一則曲折離奇的故事。當時因為齊天大聖誤將守護世界的寶石打落凡間，因此玉皇大帝指派菩提祖師協助齊天大聖下凡尋找寶石。在不同時空的尋找過程中，
 								<span class="bg-danger">齊天大聖也從各種對抗中習得七十二變。</span>
 							</p>
@@ -66,52 +68,55 @@
 							<h2 class="text-warning">
 								<strong>DOWNLOAD</strong>
 							</h2>
-							<!-- mac下載 -->
-							<!-- btn-group包覆按鈕與下拉式選單 如同群組的概念 此類別的屬性內容主要用於定位 -->
-							<!-- 可加dropup,dropright,dropleft等 更改選單開啟方向 -->
-							<div class="btn-group m-2">
-								<!-- .dropdown-toggle增加 :after 偽類別 使按鈕有倒三角型符號 -->
-								<!-- data-toggle="dropdown"宣告使用下拉式選單  aria-haspopup="true"在觸控式載具上模擬滑鼠游標停懸顯示隱藏互動內容-->
-								<!-- aria-expanded="false"表下拉式選單為關閉狀態 當點擊按鈕後 bootstrap.js會改為true屬性 展開他 -->
-								<button type="button" class="btn btn-warning btn-lg dropdown-toggle"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									<!-- em斜體 -->
-									<em>MAC DOWNLOAD</em>
-								</button>
-								<!-- dropdown-menu定義下拉式選單樣式 -->
-								<div class="dropdown-menu dropdown-menu-right">
-									<!-- dropdown-header下拉式選單標題 不可選 -->
-									<h6 class="dropdown-header">系統版本</h6>
-									<a href="#" class="dropdown-item">macOS Sierra</a>
-									<a href="#" class="dropdown-item">OS X 10.11</a>
-									<a href="#" class="dropdown-item">OS X 10.10</a>
-									<a href="#" class="dropdown-item">OS X 10.9</a>
-									<a href="#" class="dropdown-item">OS X 10.8</a>
-									<button class="dropdown-item" type="button">也可以用button表示</button>
+							<div class="row">
+								<!-- mac下載 -->
+								<!-- btn-group包覆按鈕與下拉式選單 如同群組的概念 此類別的屬性內容主要用於定位 -->
+								<!-- 可加dropup,dropright,dropleft等 更改選單開啟方向 -->
+								<div class="col-12 col-sm12 col-md-6 col-lg-6 btn-group m-2">
+									<!-- .dropdown-toggle增加 :after 偽類別 使按鈕有倒三角型符號 -->
+									<!-- data-toggle="dropdown"宣告使用下拉式選單  aria-haspopup="true"在觸控式載具上模擬滑鼠游標停懸顯示隱藏互動內容-->
+									<!-- aria-expanded="false"表下拉式選單為關閉狀態 當點擊按鈕後 bootstrap.js會改為true屬性 展開他 -->
+									<button type="button" class="btn btn-warning btn-lg dropdown-toggle"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<!-- em斜體 -->
+										<em>MAC DOWNLOAD</em>
+									</button>
+									<!-- dropdown-menu定義下拉式選單樣式 -->
+									<div class="dropdown-menu dropdown-menu-right">
+										<!-- dropdown-header下拉式選單標題 不可選 -->
+										<h6 class="dropdown-header">系統版本</h6>
+										<a href="#" class="dropdown-item">macOS Sierra</a>
+										<a href="#" class="dropdown-item">OS X 10.11</a>
+										<a href="#" class="dropdown-item">OS X 10.10</a>
+										<a href="#" class="dropdown-item">OS X 10.9</a>
+										<a href="#" class="dropdown-item">OS X 10.8</a>
+										<button class="dropdown-item" type="button">也可以用button表示</button>
+									</div>
+								</div>
+
+								<!-- pc下載 -->
+								<div class="col-12 col-sm12 col-md-6 col-lg-6 btn-group m-2">
+									<button type="button" class="btn btn-danger btn-lg">
+										<em>PC DOWNLOAD</em>
+									</button>
+									<!-- 用與單個按鈕下拉選單幾乎相同的標記創建分割按鈕下拉選單，但是添加了 .dropdown-toggle-split 以在下拉插入符號做適當間隔。
+									兩邊水平 padding 減少了 25%，並移除了為常規按鈕下拉選單添加的 margin-left。 -->
+									<button type="button"
+										class="btn btn-danger btn-lg dropdown-toggle dropdown-toggle-split"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>
+									</button>
+									<div class="dropdown-menu dropdown-menu-right">
+										<a href="#" class="dropdown-item">Windows 10</a>
+										<a href="#" class="dropdown-item">Windows 8</a>
+										<a href="#" class="dropdown-item">Windows 7</a>
+										<!-- dropdown-divider分割線 -->
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item disabled">Windows xp</a>
+									</div>
 								</div>
 							</div>
 
-							<!-- pc下載 -->
-							<div class="btn-group m-2">
-								<button type="button" class="btn btn-danger btn-lg">
-									<em>PC DOWNLOAD</em>
-								</button>
-								<!-- 用與單個按鈕下拉選單幾乎相同的標記創建分割按鈕下拉選單，但是添加了 .dropdown-toggle-split 以在下拉插入符號做適當間隔。
-									兩邊水平 padding 減少了 25%，並移除了為常規按鈕下拉選單添加的 margin-left。 -->
-								<button type="button"
-									class="btn btn-danger btn-lg dropdown-toggle dropdown-toggle-split"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									<span class="sr-only">Toggle Dropdown</span>
-								</button>
-								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item">Windows 10</a>
-									<a href="#" class="dropdown-item">Windows 8</a>
-									<a href="#" class="dropdown-item">Windows 7</a>
-									<!-- dropdown-divider分割線 -->
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item disabled">Windows xp</a>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
